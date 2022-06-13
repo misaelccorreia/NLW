@@ -21,6 +21,7 @@
 }
 
 html {
+
   scroll-behavior: smooth;
 }
 
@@ -35,6 +36,7 @@ body {
   font-size: 1.6rem;
 
   text-align: center;
+
   overflow: overlay;
 
   background-color: var(--bg-light);
@@ -45,14 +47,54 @@ body {
   margin-inline: auto;
   padding-inline: 2.4rem;
 }
+
 ul {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 section {
   padding-block: 10rem;
 }
-/*======================NAVEGATION============================*/
+
+section header h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.08em;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+
+  /* identical to box height, or 21px */
+}
+
+section header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+
+  color: var(--headline);
+}
+
+section header h1 {
+  font-size: 3.4rem;
+  color: var(--headline);
+  line-height: 130%;
+
+  margin-bottom: 2.4rem;
+}
+
+section .content p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+
+  color: var(--paragraph);
+}
+/*================NAVEGATION============================*/
 nav {
   display: flex;
 
@@ -78,6 +120,7 @@ nav.scroll {
 nav.scroll .logo path {
   fill: white;
 }
+
 nav.scroll button path {
   stroke: white;
 }
@@ -87,6 +130,8 @@ nav button {
   border: none;
   cursor: pointer;
 }
+
+
 /*==============MENU-EXPANDED================================*/
 body.menu-expanded {
   overflow: hidden;
@@ -108,6 +153,7 @@ body.menu-expanded .close-menu {
   opacity: 1;
   visibility: visible;
 }
+
 .menu {
   transform: translateY(100%);
 }
@@ -125,8 +171,8 @@ body.menu-expanded .menu {
 
   transition: transform 300ms;
   transform: translateY(0);
+
 }
-/* body tem essa classe e dentro dela ele procura o menu */
 
 .menu ul:nth-child(1) {
   display: flex;
@@ -145,7 +191,6 @@ body.menu-expanded .menu {
   text-decoration: none;
 }
 
-/* no css do navegador, tenho que chegar direto no elemento a se não ele não aplica */
 .menu .button {
   background: white;
   border-radius: 4rem;
@@ -185,8 +230,9 @@ body.menu-expanded button path {
   stroke: white;
 }
 
-/*===========HOME=======================================================*/
 
+
+/*===========HOME========================================*/
 #home {
   padding-top: calc(4.1rem + var(--nav-height));
 }
@@ -204,20 +250,6 @@ body.menu-expanded button path {
   z-index: -1;
 }
 
-#home h4 {
-  font-size: 1.4rem;
-  color: var(--primary-color);
-  margin-bottom: 1.6rem;
-}
-
-#home h1 {
-  font-size: 3.4rem;
-  color: var(--headline);
-  line-height: 130%;
-
-  margin-bottom: 2.4rem;
-}
-
 #home p {
   font-size: 1.8rem;
   line-height: 150%;
@@ -226,7 +258,7 @@ body.menu-expanded button path {
 
   margin-bottom: 3.2rem;
 }
-/*display é uma propriedade, o proprio navegador já vem com definições de estilos */
+
 #home button {
   background: var(--primary-color);
 
@@ -289,27 +321,11 @@ body.menu-expanded button path {
   line-height: 150%;
 }
 
-/*=====SERVICES=================================================*/
-
-#services header h4 {
-  font-size: 1.4rem;
-  line-height: 150%;
-  letter-spacing: 0.08rem;
-
-  color: var(--primary-color);
-
-  text-transform: uppercase;
-
-  margin-bottom: 1.6rem;
-}
-
-#services header h2 {
-  font-size: 3rem;
-  line-height: 3.9rem;
-
-  color: var(--headline);
+/*=====SERVICES==========================================*/
+#services h2 {
   margin-bottom: 6rem;
 }
+
 #services .cards {
   display: flex;
   flex-direction: column;
@@ -321,6 +337,7 @@ body.menu-expanded button path {
   text-align: left;
 
   background: white;
+
   border: 1px solid var(--brand-light);
   border-radius: 0.6rem;
 }
@@ -328,5 +345,18 @@ body.menu-expanded button path {
 #services .card h3 {
   margin-block: 1.6rem;
 }
-/*de erro no STAG 3 34:59 button menu expandad*/
+
 /*=====ABOUT=================================================*/
+#about {
+  text-align: left;
+  background-color: var(--brand-beige);
+}
+
+#about header h2 {
+  margin-bottom: 2, 4rem;
+}
+
+#about .content p {
+  margin-top: 2.4rem;
+  margin-bottom: 6rem;
+}
